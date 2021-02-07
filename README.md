@@ -3,7 +3,7 @@ It's Battleships! Please run main.py to play.
 - Requires Python 3.7+
 - Requires pygame 1.9+
 
-![Example game](battleships-docs-example.png)
+![Example game](battleships_docs_example.png)
 
 This adaptation of the pen-and-paper Milton Bradley game, Battleships,
 follows a standard set of [rules](https://www.cs.nmsu.edu/~bdu/TA/487/brules.htm).
