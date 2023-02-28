@@ -22,15 +22,16 @@ def main():
     running = True
 
     while running:
-        # Scene switching ---
-        if scene.flag_new_scene is not None:
-            scene = scene.flag_new_scene(screen, clock, *scene.flag_new_scene_args,
-                                         **scene.flag_new_scene_kwargs)
         # Handle events --- (pg.key.get_pressed() for pressed keys)
         if pg.event.get(pg.QUIT):
             running = False
         else:
             scene.handle_events(pg.event.get())
+
+        # Scene switching ---
+        if scene.flag_new_scene is not None:
+            scene = scene.flag_new_scene(screen, clock, *scene.flag_new_scene_args,
+                                         **scene.flag_new_scene_kwargs)
 
         # Update scene and display --
         scene.update()
